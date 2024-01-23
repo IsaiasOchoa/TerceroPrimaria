@@ -1,0 +1,279 @@
+.volver{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    a{
+        text-decoration: none;
+        background-color: #fff;
+        color: #ffffff;
+        border: 2px solid #eee;
+        background-color: #b04d50;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        transition: all .3s;
+        &:hover{
+            transform: scale(.95);
+        }
+    }
+}
+
+.main-Trimestres {
+    margin: 0px;
+    padding: 0px 5%;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+
+    .encabezado {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        h1 {
+            box-sizing: border-box;
+            font-size: 25px;
+            color: #86ac41;
+            text-align: center;
+
+            span {
+                color: #94d31f;
+            }
+        }
+
+        img {
+            object-fit: contain;
+            height: 150px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .uno {
+            width: 50px;
+            position: absolute;
+            left: 20%;
+            transform: rotate(-30deg);
+        }
+
+        .dos {
+            width: 50px;
+            position: absolute;
+            right: 20%;
+            transform: rotate(30deg);
+        }
+    }
+
+    .botones {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        a{
+            box-sizing: border-box;
+            width: 45%;
+            height: 70px;
+            background-color: #f1d5ff;
+            border-radius: 10px;
+            color: #971fd3;
+            font-weight: $texto-titulo;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid #971fd3;
+            font-size: 30px;
+            cursor: pointer;
+            transition: all .3s;
+            
+
+            &:hover {
+                filter: contrast(.8);
+                transform: scale(.95);
+            }
+        }
+    }
+
+}
+
+//Estilos de las Preguntas
+
+.preguntas {
+    display: block;
+    z-index: 50;
+    padding:20px 0px;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0px;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                button {
+                    box-sizing: content-box;
+                    padding: 0px 10px;
+                    width: 250px;
+                    min-height: 70px;
+                    background-color: #8706c7;
+                    border-radius: 10px;
+                    color: #fff;
+                    font-weight: $texto-titulo;
+                    border:none;
+                    box-shadow: 0px 0px 10px #bbb;
+                    font-size: 20px;
+                    cursor: pointer;
+                    transition: all .3s;
+
+                    &:hover {
+                        filter: contrast(.8);
+                        transform: scale(.95);
+                    }
+
+                    span{
+                        font-size: 13px;
+                    }
+
+                    img{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        h2 {
+            text-align: center;
+            color: #ebd001;
+            font-size: 32px;
+            
+        }
+        .imagen-container{
+            width: 100%;
+            height: 170px;
+
+            img{
+                max-width: 100%;
+                max-height:180px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.gameOver{
+    box-sizing: border-box;
+    z-index: 100;
+    padding: 0px 5%;
+    margin: 0px;
+    position: absolute;
+    width: 100%;
+    height: 127%;
+    top: 0px;
+    background:url(../img/General-Trimestres/fondo.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    p{
+        font-size: 30px;
+        font-weight: $texto-titulo;
+        color: #86ac41;
+        margin: 20px 0px;
+    }
+    button{
+        padding: 10px 20px;
+        color: #fff;
+        border-radius: 10px;
+        background-color: #8706c7;
+        border: 3px solid #fff;
+        font-weight: $texto-subtitulo;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            transform: scale(.95);
+            filter: contrast(.8);
+        }
+    }
+    img{
+        width: auto;
+        height: 150px;
+    }
+}
+
+.win{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    box-sizing: border-box;
+    background:url(../img/General-Trimestres/fondo.png);
+    z-index: 100;
+
+    p{
+        font-size: 35px;
+        font-weight: $texto-titulo;
+        color: #86ac41;
+        margin: 20px 0px;
+    }
+    button{
+        padding: 10px 20px;
+        color: #fff;
+        border-radius: 10px;
+        background-color: #8706c7;
+        border: 3px solid #fff;
+        font-weight: $texto-subtitulo;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+            transform: scale(.95);
+            filter: contrast(.8);
+        }
+    }
+    img{
+        width: auto;
+        height: 200px;
+    }
+}
+
+.disable-link{
+    filter: contrast(.7);
+    pointer-events: none;
+    text-decoration: none;
+    &:hover{
+        transform: none;
+        filter:contrast(.3);
+    }
+}

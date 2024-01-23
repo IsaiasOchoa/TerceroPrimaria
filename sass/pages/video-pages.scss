@@ -1,0 +1,239 @@
+
+    .div-container-videos {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container-video{
+            width: 100%;
+            margin: 20px 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &:nth-child(1){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(2){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(3){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(4){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(5){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(6){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(7){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(8){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(9){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(10){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(11){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(12){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(13){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(14){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(15){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(16){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(17){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(18){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(19){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(20){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(21){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(22){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(23){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(24){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(25){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(26){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(27){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(28){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(29){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(30){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(31){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(32){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(33){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(34){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(35){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(36){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(37){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            &:nth-child(38){
+                h3{
+                    color: #8b38de;
+                }
+            }
+            &:nth-child(39){
+                h3{
+                    color: #b04d50;
+                }
+            }
+            &:nth-child(40){
+                h3{
+                    color: #276ae7;
+                }
+            }
+            
+            h3{
+                font-size: 25px;
+                font-weight: 800;
+                margin-bottom: 20px;
+            }
+            a{
+                display: block;
+                background-image: url(../videos/multimedia/Abecedario.png);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 100%;
+                min-height: 200px;
+                max-height: 300px;
+                border-radius: 15px;
+                box-shadow: 0px 0px 10px #4945b6;
+            }
+        }
+
+    }

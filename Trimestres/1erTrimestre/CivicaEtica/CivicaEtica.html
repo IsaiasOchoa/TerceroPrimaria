@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+            </div>
+            <div class="volver">
+                <a href="../../1erTrimestre/1erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. Las características que te son propias, como tu platillo favorito, tu juguete o libro favorito o algún rasgo físico. </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/1erTrimestre/Matematicas/pregunta1.png">
+                </div>
+                <ul>
+                    <li><button onclick="victoria('p1')">Te dan identidad y te hacen único. 
+                    </button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Te hacen ser igual a los demás. 
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2.Las características que tienes en común con tus compañeros y amigos, como la edad, la escuela donde asisten, el lugar donde viven y el idioma que hablan.  </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/1erTrimestre/Matematicas/pregunta2.png">
+                </div>
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">Te hacen ser una persona única
+                    </button></li>
+                    <li><button onclick="victoria('p2')">Te dan rasgos semejantes a los demás. 
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. ¿Qué se necesita para ser parte de un grupo? 	</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/1erTrimestre/Matematicas/pregunta3.png">
+                </div>
+                <ul>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Tener características idénticas con todos los integrantes del grupo. 
+                    </button></li>
+                    <li><button onclick="victoria('p3')">
+                        Respetar las normas de vida en común, las características y diferencias de cada uno. 
+                        </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. ¿Para qué sirven las vacunas? </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/1erTrimestre/Matematicas/pregunta4.png">
+                </div>
+                <ul>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Para curar la diabetes. 
+                    </button></li>
+                    <li><button onclick="victoria('p4')">Para prevenir enfermedades 
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. Son medidas de higiene personal. </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/1erTrimestre/Matematicas/pregunta5.png">
+                </div>
+                <ul>
+                    <li><button onclick="victoria('p5')">Bañarse, lavarse los dientes, usar ropa limpia, cepillar el cabello. 
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Dormir bien, hacer ejercicio, comer correctamente. 
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. Sentimientos como tristeza, dolor, miedo, alegría, sorpresa, duda son ejemplos de: </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/1erTrimestre/Matematicas/pregunta6.png">
+                </div>
+                <ul>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Valores</button></li>
+                    <li><button onclick="victoria('p6')">Emociones</li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. ¿Qué quiere decir “manejar una emoción”? </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/1erTrimestre/Matematicas/pregunta7.png">
+                </div>
+                <ul>
+                    <li><button onclick="victoria('p7')">Tratar de entenderla y expresarla adecuadamente</button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Evitar sentirla y o tratar de esconderla</button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. ¿Qué significa “ponerse una meta”? </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/1erTrimestre/Matematicas/pregunta8.png">
+                </div>
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Realizar mis actividades diarias pensando que son necesarias para cumplir un objetivo. 
+                    </button></li>
+                    <li><button onclick="victoria('p8')">Pensar qué quiero y cómo lograrlo, y definir cómo y cuándo lo llevaré a cabo. 
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

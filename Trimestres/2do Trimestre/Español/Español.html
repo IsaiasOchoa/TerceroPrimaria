@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2do Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b9">9</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b10">10</a>
+            </div>
+            <div class="volver">
+                <a href="../../2do Trimestre/2doTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Qué tipo de texto es?</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta1.png">
+                </div>
+                <ul>
+                    <li><button onclick="victoria('p1')">Poema</button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Noticia</button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">Folleto</button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Cuento</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. ¿En qué tiempo verbal están las palabras resaltadas del texto? </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta2.png">
+                </div>
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">Presente</button></li>
+                    <li><button onclick="victoria('p2')">Pasado</button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Futuro</button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Ninguno</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. ¿Qué nombre sería más adecuado para el subtítulo que falta? </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta3.png">
+                </div>
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">Presa de araña</button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">Seda</button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">Alimento de araña</button></li>
+                    <li><button onclick="victoria('p3')">La telaraña</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. ¿Qué tipo de texto es el siguiente? </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta4.png">
+                </div>
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">Reporte</button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Cuento</button></li>
+                    <li><button onclick="victoria('p4')">Un relato autobiográfico</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Artículo</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. ¿En qué sección de un periódico, se podría encontrar la noticia anterior? </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta5.png">
+                </div>
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Nacional</button></li>
+                    <li><button onclick="victoria('p5')">Deportes</button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Espectaculos</button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Clasificados</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. ¿Qué tipo de narración es utilizado para narrar el siguiente texto? 	</h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta6.png">
+                </div>
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Ninguna</button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Ambas</button></li>
+                    <li><button onclick="victoria('p6')">Voz activa</button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Voz pasiva</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. ¿Cómo se llama el texto breve que explica al lector lo que se muestra en la ilustración? </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta7.png">
+                </div>
+                <ul>
+                    <li><button onclick="victoria('p7')">Pie de fotografía o ilustración.</button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Pie de página</button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Firma de autor.</button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. Al emplear la paráfrasis después de una lectura: </h2>
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Se investiga más información sobre el tema leído. 
+                    </button></li>
+                    <li><button id="22" onclick="gameOver('p8','22')">Se copia el contenido del texto. 
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">Se escriben las frases importantes del texto</button></li>
+                    <li><button onclick="victoria('p8')">Se escribe con nuestras propias palabras lo que entendimos después de leer un texto 
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 9 -->
+        <article style="display: none;" class="main preguntas" id="p9">
+            <div>
+                <h2>9. Observa y elige la frase adjetiva. </h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p9')">Un hombre muy alto y delgado pasea con un peludo y bonito perro. 
+                    </button></li>
+                    <li><button id="25" onclick="gameOver('p9','25')">Un hombre pasea un perro 
+                    </button></li>
+                    <li><button id="26" onclick="gameOver('p9', '26')">Un perro es paseado por un hombre. 
+                    </button></li>
+                    <li><button id="27" onclick="gameOver('p9', '27')">Un hombre anda paseando con un perro. 
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 10 -->
+        <article style="display: none;" class="main preguntas" id="p10">
+            <div>
+                <h2>10. ¿Qué tipo de narración es utilizado para narrar el siguiente texto? </h2>
+                <div class="imagen-container">
+                    <img src="../../../img/2doTrimestre/Español/pregunta10.png">
+                </div>
+                <ul>
+                    <li><button id="28" onclick="gameOver('p10','28')">Voz activa
+                    </button></li>
+                    <li><button id="29" onclick="gameOver('p10', '29')">Ninguna</button></li>
+                    <li><button onclick="victoria('p10')">Voz pasiva</button></li>
+                    <li><button id="30" onclick="gameOver('p10', '30')">Ambas</button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

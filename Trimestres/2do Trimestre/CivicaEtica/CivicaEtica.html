@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b9','p9')" id="b8">8</a>
+                <a href="#" onclick="pregunta('b10','p10')" id="b8">8</a>
+            </div>
+            <div class="volver">
+                <a href="../../1erTrimestre/1erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Qué es la justicia? </h2>
+                <ul>
+                    <li><button onclick="victoria('p1')">Dar a cada quien lo que le corresponde de acuerdo con la ley. 
+                    </button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Que cada quien pueda hacer lo que quiera.  
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. Nos permite elegir la manera de conducir nuestras vidas sin ser tratados como objeto para ser vendido o intercambiado.  </h2>
+                <ul>
+                    
+                    <li><button onclick="victoria('p2')">Libertad 
+                    </button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Soberania
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. Es una actividad humana que requiere esfuerzo físico e intelectual y contribuye a la creación de satisfactores como productos y servicios. </h2>
+                <ul>
+                   
+                    <li><button id="9" onclick="gameOver('p3', '9')">Dinero
+                    </button></li>
+                    <li><button onclick="victoria('p3')">Trabajo
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. Es un ejercicio de autorregulación que al practicarlo se pone limite a la manera de usar las cosas y se evita el desperdicio. </h2>
+                <ul>
+                    <li><button onclick="victoria('p4')">Reciclar</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Ahorrar</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5.Es tratar a todas las personas como seres valiosos que deben ser tomados en cuenta, sin hablarles con groserías, malos tratos o burlas</h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p5')">Respeto
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">Libertad 
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. Si varios compañeros están jugando y uno de ellos rompe un vidrio del salón a propósito. ¿Quién debería reponerlo? </h2>
+               
+                <ul>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Todos los compañeros que estaban jugando. 
+                    </button></li>
+                    <li><button onclick="victoria('p6')">El compañero que lo rompió</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. Si varios compañeros están jugando y uno de ellos rompe un vidrio del salón por accidente. ¿Quién debería reponerlo?  </h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p7')">Todos los compañeros que estaban jugando
+                    </button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">El compañero que lo rompió 
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8¿Qué es la diversidad lingüística y cultural? 	</h2>
+                
+                <ul>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Un país con muchos ciudadanos extranjeros</button></li>
+
+                    <li><button onclick="victoria('p8')">Las tradiciones, costumbres, canciones, formas de celebrar bodas y nacimientos. Hablar muchas lenguas.</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+         <!-- pregunta 9 -->
+         <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>9 ¿Qué son los bienes comunes que a todos conviene cuidar? 	</h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p9')">Caminos, carreteras, calles, servicio de agua, drenaje y electricidad. 
+                    </button></li>
+
+                    <li><button id="25" onclick="gameOver('p9', '25')">La ropa que vestimos, el auto que usamos, la televisión que vemos.
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+         <!-- pregunta 10 -->
+         <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>10 ¿Cuándo puede y debe cambiar una tradición o costumbre?  	</h2>
+                
+                <ul>
+                    <li><button id="26" onclick="gameOver('p10', '26')">Cuando ya ha pasado de moda.</button></li>
+
+                    <li><button onclick="victoria('p10')">Cuando pone en peligro la salud, la libertad y el trato justo. 
+                    </button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>

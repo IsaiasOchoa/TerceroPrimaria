@@ -1,0 +1,11 @@
+//Estilos generales del sitio
+@import "components/global.scss";
+@import "components/variables.scss";
+
+//Secciones o paginas del sitio
+@import "pages/index.scss";
+
+//Estilos para las paginas de videos aparte a los trimestres
+@import "pages/video-pages.scss";
+//Trimestres
+@import "pages/Trimestres/trimestres.scss";

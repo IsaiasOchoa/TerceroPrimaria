@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1er Trimestre</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Dirt&display=swap"
+        rel="stylesheet">
+
+    <!-- Mis estilos css -->
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <!-- iconos de Font Awesome -->
+    <script src="https://kit.fontawesome.com/311fb8a6ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <section class="main main-Trimestres" id="main-section">
+            <div class="encabezado">
+                <h1><span>Elije</span> un numero del <span>1 al 10</span></h1>
+                <img src="../../../img/General-Trimestres/personaje-pregunta.png">
+                <img class="uno" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+                <img class="dos" src="../../../img/General-Trimestres/interrogacion.png" alt="">
+            </div>
+            <div class="botones">
+                <a href="#" onclick="pregunta('b1','p1')" id="b1">1</a>
+                <a href="#" onclick="pregunta('b2','p2')" id="b2">2</a>
+                <a href="#" onclick="pregunta('b3','p3')" id="b3">3</a>
+                <a href="#" onclick="pregunta('b4','p4')" id="b4">4</a>
+                <a href="#" onclick="pregunta('b5','p5')" id="b5">5</a>
+                <a href="#" onclick="pregunta('b6','p6')" id="b6">6</a>
+                <a href="#" onclick="pregunta('b7','p7')" id="b7">7</a>
+                <a href="#" onclick="pregunta('b8','p8')" id="b8">8</a>
+            </div>
+            <div class="volver">
+                <a href="../../1erTrimestre/1erTrimestre.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../../../index.html"><i class="fa-solid fa-circle-xmark"></i></a>
+            </div>
+        </section>
+
+        <!-- Pantallas de Preguntas -->
+
+        <!-- pregunta 1 -->
+        <article style="display: none;" class="main preguntas" id="p1">
+            <div>
+                <h2>1. ¿Cuál es la función de las leyes? </h2>
+                
+                <ul>
+                    <li><button onclick="victoria('p1')">Que ofrezcan seguridad a los ciudadanos</button></li>
+                    <li><button id="1" onclick="gameOver('p1','1')">Que seamos únicos. 
+                    </button></li>
+                    <li><button id="2" onclick="gameOver('p1', '2')">
+                        Que sean cambiadas cada año. 
+                        </button></li>
+                    <li><button id="3" onclick="gameOver('p1', '3')">Que nadie haga nada. 
+                    </button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 2 -->
+        <article style="display: none;" class="main preguntas" id="p2">
+            <div>
+                <h2>2. Los siguientes son derechos de los niños, excepto: </h2>
+              
+                <ul>
+                    <li><button id="4" onclick="gameOver('p2','4')">No ser separados de sus padres.</button></li>
+                    <li><button onclick="victoria('p2')">Ser discriminados.</button></li>
+                    <li><button id="5" onclick="gameOver('p2', '5')">Asistir a la escuela</button></li>
+                    <li><button id="6" onclick="gameOver('p2', '6')">Tener buena alimentación</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 3 -->
+        <article style="display: none;" class="main preguntas" id="p3">
+            <div>
+                <h2>3. ¿Dónde deben ser respetados los derechos de los niños? </h2>
+              
+                <ul>
+                    <li><button id="7" onclick="gameOver('p3','7')">En la escuela</button></li>
+                    <li><button id="8" onclick="gameOver('p3', '8')">En la casa</button></li>
+                    <li><button id="9" onclick="gameOver('p3', '9')">En la calle</button></li>
+                    <li><button onclick="victoria('p3')">En todos lados</button></li>
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 4 -->
+        <article style="display: none;" class="main preguntas" id="p4">
+            <div>
+                <h2>4. ¿Cuál es una forma de gobierno autoritaria? </h2>
+            
+                <ul>
+                    <li><button id="10" onclick="gameOver('p4','10')">Es cuando todos votamos</button></li>
+                    <li><button id="11" onclick="gameOver('p4', '11')">Es cuando la gente elige a sus gobernantes</button></li>
+                    <li><button onclick="victoria('p4')">Es cuando un gobierno se auto nombra en el poder</button></li>
+                    <li><button id="12" onclick="gameOver('p4', '12')">Es cuando el pueblo gobie</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 5 -->
+        <article style="display: none;" class="main preguntas" id="p5">
+            <div>
+                <h2>5. . Adriana es una niña de 8 años que sufre maltrato intrafamiliar, ¿dónde puede acudir para que la ayuden? </h2>
+              
+                <ul>
+                    <li><button id="13" onclick="gameOver('p5','13')">Al teatro o al jardín</button></li>
+                    <li><button onclick="victoria('p5')">A la Comisión de los Derechos Humanos. 
+                    </button></li>
+                    <li><button id="14" onclick="gameOver('p5', '14')">No debe ir a ningún lado, porque eso es normal. 
+                    </button></li>
+                    <li><button id="15" onclick="gameOver('p5', '15')">Debe contarle solamente a una amiga</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 6 -->
+        <article style="display: none;" class="main preguntas" id="p6">
+            <div>
+                <h2>6. El maestro pregunta: ¿Qué es la justicia? Elige al alumno que contestó correctamente: </h2>
+              
+                <ul>
+                    <li><button id="16" onclick="gameOver('p6','16')">Joel: “es un libro”. 
+                    </button></li>
+                    <li><button id="17" onclick="gameOver('p6', '17')">Brian: “es la forma de gobierno que tenemos todos”. 
+                    </button></li>
+                    <li><button id="18" onclick="gameOver('p6', '18')">Mario: “es todo lo que nos rodea”.</button></li>
+                    <li><button onclick="victoria('p6')">Joaquín: “es dar a cada quien lo que le corresponde”. 
+                    </li>
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 7 -->
+        <article style="display: none;" class="main preguntas" id="p7">
+            <div>
+                <h2>7. Elige el planteamiento donde no se respeten los derechos de los niños: </h2>
+               
+                <ul>
+                    <li><button onclick="victoria('p7')">Rodrigo no puede ir a la escuela primaria, porque tiene que trabajar en el mercado con su padre</button></li>
+                    <li><button id="19" onclick="gameOver('p7','19')">Fernanda se enfermó y sus padres la llevaron a la clínica más cercana para ser atendida. 
+                    </button></li>
+                    <li><button id="20" onclick="gameOver('p7', '20')">Mariano es llevado por sus padres al parque cada 15 días. 
+                    </button></li>
+                    <li><button id="21" onclick="gameOver('p7', '21')">Claudia platica con sus padres de sus problemas. 
+                    </button></li>
+                    
+
+                </ul>
+            </div>
+        </article>
+
+        <!-- pregunta 8 -->
+        <article style="display: none;" class="main preguntas" id="p8">
+            <div>
+                <h2>8. Elige la opción verdadera: </h2>
+               
+                <ul>
+                    <li><button id="22" onclick="gameOver('p8','22')">Los ciudadanos podemos hacer lo que queramos. 
+                    </button></li>
+                    <li><button id="23" onclick="gameOver('p8', '23')">La autoridad puede hacer lo que quiera en una sociedad democrática</button></li>
+                    <li><button id="24" onclick="gameOver('p8', '24')">Las leyes son solo para impedir la libertad</button></li>
+                    <li><button onclick="victoria('p8')">En la democracia todos participamos</button></li>
+
+                </ul>
+            </div>
+        </article>
+
+
+        <!-- Fin de Pantalla de preguntas -->
+
+
+
+
+
+        <!-- Pantalla de Game Over -->
+        <article style="display: none;" class="gameOver" id="gameOver">
+            <img src="../../../img/General-Trimestres/personaje-pregunta.png" alt="">
+            <p>Sigue Intentando <i class="fa-regular fa-face-frown"></i></p>
+            <button onclick="volverResponder()">Intentalo de Nuevo</button>
+        </article>
+        <!-- Fin de Pantalla Game Over -->
+
+
+        <!-- Pantalla de Victoria -->
+        <article style="display: none;" class="win" id="victoria">
+            <img src="../../../img/General-Trimestres/batman.png" alt="">
+            <p>¡BatiGenial!</p>
+            <button onclick="volverMenu()">Menu</button>
+        </article>
+        <!-- Fin de pantalla de Victoria -->
+
+    </main>
+    <!-- Agregando los scripts -->
+    <script src="../../../JS/main.js"></script>
+</body>
+
+</html>
